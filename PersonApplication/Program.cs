@@ -10,15 +10,36 @@ namespace PersonApplication
     {
         static void Main(string[] args)
         {
-            // create a one Student object with parametric constuctor
+            // create a one Teacher object
             Teacher teacher = new Teacher("Kirsi", "Kernel", "D556");
             teacher.Age = 35;
             teacher.Address = "Piippukatu 2";
             teacher.PhoneNumber = "010-243051";
             Console.WriteLine(teacher.ToString());
 
-            teacher.TeacherMethod();
-            student.StudentMethod();
+            // create a one Person object
+            Person person = new Person();
+            person.FirstName = "Kirsi";
+            person.LastName = "Kernel";
+            person.Address = "torikatu 1";
+            person.Age = 30;
+            person.PhoneNumber = "020-12345678";
+            Console.WriteLine(person.ToString());
+
+
+            // create a one Student object with parametric constuctor
+            Student student = new Student("Minna", "Husso", "J9090");
+            student.Address = "kilju 3";
+            student.Age = 20;
+            student.PhoneNumber = "040-12345678";
+            Console.WriteLine(student.ToString());
+
+            // do something methods
+            person.PersonMethod(); // This method belongs to Person!
+            teacher.PersonMethod(); // This method belongs to Person! (derived class can use it!)
+            teacher.TeacherMethod(); // This method belongs to Teacher!
+            student.PersonMethod(); // This method belongs to Person! (derived class can use it!)
+            student.StudentMethod(); // This method belongs to Student!
         }
     }
 }
