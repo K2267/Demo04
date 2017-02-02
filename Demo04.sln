@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04", "Demo04\Demo04.csproj", "{D97E68EE-E619-44AE-943B-4BADD1433941}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht1", "Demo04\Teht1.csproj", "{D97E68EE-E619-44AE-943B-4BADD1433941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonApplication", "PersonApplication\PersonApplication.csproj", "{3F36879B-4854-41F6-835C-8A0BCD095350}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D97E68EE-E619-44AE-943B-4BADD1433941}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D97E68EE-E619-44AE-943B-4BADD1433941}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D97E68EE-E619-44AE-943B-4BADD1433941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F36879B-4854-41F6-835C-8A0BCD095350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F36879B-4854-41F6-835C-8A0BCD095350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F36879B-4854-41F6-835C-8A0BCD095350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F36879B-4854-41F6-835C-8A0BCD095350}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
