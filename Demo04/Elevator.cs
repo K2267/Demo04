@@ -51,7 +51,7 @@ namespace Demo04
         public void PrintData()
         {
             Console.WriteLine("Elevator is now in floor: " + Kerros);
-            Console.WriteLine("Give a new floor number (1-5) > " + Floor);
+            //Console.WriteLine("Give a new floor number (1-5) > " + Floor);
 
         }
     }
