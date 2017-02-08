@@ -20,6 +20,7 @@ namespace Teht4
             Bike.Color = "Orange/black";
             Console.WriteLine(Bike.ToString());
 
+            
             Vehicle vehicle = new Vehicle("Skoda", "Octavia");
             vehicle.ModelYear = 2010;
             vehicle.Color = "White";
