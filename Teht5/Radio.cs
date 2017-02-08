@@ -13,7 +13,7 @@ namespace Teht5
         private int Volume;
         private readonly int maxVolume = 9;//Rajoitus äänelle 
         private readonly int minVolume = 0;//
-        private readonly double minFrequency = 200.0;//Rajoitus taajuudelle
+        private readonly double minFrequency = 2000.0;//Rajoitus taajuudelle
         private readonly double maxFrequency = 26000.0;//
 
 
@@ -30,7 +30,9 @@ namespace Teht5
                 if (OnOff == false)
                     Console.WriteLine("Shutdown");
                 else
-                    Console.WriteLine("Radio is ON ");
+                    Console.WriteLine("\n---------------");
+                    Console.WriteLine("| Radio is ON |");
+                    Console.WriteLine("---------------\n");
             }
         }
 
@@ -45,7 +47,7 @@ namespace Teht5
                 if (value <= maxFrequency)
                 {
                     Frequency = value;
-                    Console.WriteLine("Channel freq. is: " + Frequency);
+                    //Console.WriteLine("Channel freq. is: " + Frequency);
                 }
                 if (value < minFrequency)
                 {
@@ -70,7 +72,7 @@ namespace Teht5
                 if (value <= maxVolume)
                 {
                     Volume = value;
-                    Console.WriteLine("Volume is: " + Volume);
+                    //Console.WriteLine("Volume is: " + Volume);
                 }
                 if (value < minVolume)
                 {
