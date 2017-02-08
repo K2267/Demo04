@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teht4
+namespace Teht7
 {
-    class Vehicle
+    class Kodinkone
     {
         public string Name { get; set; }
         public string Model { get; set; }
@@ -15,23 +15,23 @@ namespace Teht4
 
 
 
-        
-        public Vehicle(string name, string model)
+
+        public Kodinkone(string name, string model)
         {
             Name = name;
             Model = model;
         }
 
-        // just one method what Vehicle can do
+        
         public void VehicleMethod()
         {
-            Console.WriteLine("This method belongs to Vehicle!");
+            Console.WriteLine("This method belongs to House Electronics!");
         }
 
         // return vehicle data as a one string, override Object class ToString()-method
         public override string ToString()
         {
-            Console.WriteLine("Vehicle info");
+            Console.WriteLine("Home appliance info");
             return "- Name:" + Name + " Model:" + Model + " ModelYear:" + ModelYear + " Color:" + Color + "\n";
         }
     }
