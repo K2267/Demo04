@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo04
+namespace Teht2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Elevator hissi = new Elevator();
+            Vahvistin Amplifier = new Vahvistin();
             while (true)
             {
-                hissi.Kerros = hissi.Floor;
-                hissi.PrintData();
+                Amplifier.Voice = Amplifier.Volume;
+                //Amplifier.PrintData();
                 Console.Write("Give a new floor number (1-5) > ");
-                hissi.Floor = int.Parse(Console.ReadLine());
-                //hissi.PrintData();
+                Amplifier.Volume = int.Parse(Console.ReadLine());
+                Amplifier.PrintData();
             }
         }
     }
